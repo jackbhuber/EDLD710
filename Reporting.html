@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EDLD 710: Data Analysis for Problems of Practice - Reporting your Data</title>
+<title>EDLD 710: Data Analysis for Problems of Practice - 3&nbsp; Reporting your Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -15,6 +15,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -25,7 +44,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./References.html" rel="next">
 <link href="./Analyzing.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,7 +92,7 @@ ul.task-list{list-style: none;}
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Reporting your Data</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporting your Data</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -108,17 +127,22 @@ ul.task-list{list-style: none;}
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analyzing.html" class="sidebar-item-text sidebar-link">Analyzing your Data</a>
+  <a href="./Preparing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preparing your Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Reporting.html" class="sidebar-item-text sidebar-link active">Reporting your Data</a>
+  <a href="./Analyzing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  <a href="./Reporting.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporting your Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./References.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
     </ul>
@@ -126,14 +150,26 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#best-practices-for-figures-i.e.-graphs" id="toc-best-practices-for-figures-i.e.-graphs" class="nav-link active" data-scroll-target="#best-practices-for-figures-i.e.-graphs"> <span class="header-section-number">4</span> Best practices for figures (i.e.&nbsp;graphs)</a>
+  <ul class="collapse">
+  <li><a href="#line-graphs-for-over-time-data" id="toc-line-graphs-for-over-time-data" class="nav-link" data-scroll-target="#line-graphs-for-over-time-data"> <span class="header-section-number">4.1</span> 1. Line graphs for over-time data</a></li>
+  <li><a href="#bar-graphs-for-group-comparisons." id="toc-bar-graphs-for-group-comparisons." class="nav-link" data-scroll-target="#bar-graphs-for-group-comparisons."> <span class="header-section-number">4.2</span> 2. Bar graphs for group comparisons.</a></li>
+  <li><a href="#save-the-pies-for-dessert" id="toc-save-the-pies-for-dessert" class="nav-link" data-scroll-target="#save-the-pies-for-dessert"> <span class="header-section-number">4.3</span> 3. Save the pies for dessert</a></li>
+  </ul></li>
+  <li><a href="#best-practices-for-tables" id="toc-best-practices-for-tables" class="nav-link" data-scroll-target="#best-practices-for-tables"> <span class="header-section-number">5</span> Best practices for tables</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Reporting your Data</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporting your Data</span></h1>
 </div>
 
 
@@ -147,10 +183,55 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>ladjkf;ajdf</p>
-<p>alfjka;sdfjk</p>
+<p>The purpose of this final page is to help you decide how best to package and present the results of your data analysis for a professional audience.</p>
+<hr>
+<section id="best-practices-for-figures-i.e.-graphs" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Best practices for figures (i.e.&nbsp;graphs)</h1>
+<p>“Figures should be accurate, clear, and concise. As with tables, the figure with its title and legend should be understandable without undue reference to the text.”<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<section id="line-graphs-for-over-time-data" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="line-graphs-for-over-time-data"><span class="header-section-number">4.1</span> 1. Line graphs for over-time data</h2>
+<p>Line graphs are the appropriate way to show change over time in one or a few groups. Your x-axis (horizontal) should be time, and your y-axis should be the quantity by which you want to see change over time. You can use different lines for different groups.</p>
+</section>
+<section id="bar-graphs-for-group-comparisons." class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="bar-graphs-for-group-comparisons."><span class="header-section-number">4.2</span> 2. Bar graphs for group comparisons.</h2>
+<p>The bar graph is the Swiss army knife of data visualization. It’s useful because it is so versatile. Bar graphs use size to compare different quantities. Your y-axis is your quantity and on your x-axis you put your group categories.</p>
+</section>
+<section id="save-the-pies-for-dessert" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="save-the-pies-for-dessert"><span class="header-section-number">4.3</span> 3. Save the pies for dessert</h2>
+<p>Pie graphs are a great way to visualize proportions - parts that make up a whole. And, with a few nice colors, they’re attractive. They’re also simple.</p>
+<p>But they can be a pain to create - to get right visually. They also lose their utility when you have more than a few categories. For this reason, the AMA discourages the use of pie graphs:</p>
+<p>If you do want to use a pie graph, my advice to you is to keep it simple; use it only to show a few categories.</p>
+<hr>
+</section>
+</section>
+<section id="best-practices-for-tables" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Best practices for tables</h1>
+<p>Although data visualization has become all the rage, there is a still a place at the table for tables (sorry - bad pun - I couldn’t resist). Tables remain a concise way to present a sizable amount of quantitative data.</p>
+<p>I encourage you to strive for your tables to meet this standard: “A properly designed and constructed table should be able to stand independently, without requiring undue reference to the text.”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>I encourage you to review the section on tables in the APA Style Guide.</p>
+<ul>
+<li>What goes on the far left column?</li>
+<li>How do I format the main column headings?</li>
+<li>How do I report p-values?</li>
+<li>How do I report my data?</li>
+<li>How do I align things?</li>
+</ul>
+<p>This article from <span class="citation" data-cites="MillerEtAl2020">(<a href="Preparing.html#ref-MillerEtAl2020" role="doc-biblioref"><strong>MillerEtAl2020?</strong></a>)</span> illustrates how to present a table that reports the results of a series of chi-square tests of the differences between two groups (pre-implementation and post-implementation) on categorical outcomes.</p>
+<p>Notice that the authors showed the independent variable (intervention group) as columns which enables us as readers to compare outcomes by reading left to right.</p>
+<hr>
+<div id="refs" role="doc-bibliography" style="display: none">
+
+</div>
 
 
+</section>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1" role="doc-endnote"><p><a href="https://academic.oup.com/amamanualofstyle/book/27941/chapter/207563838">From the AMA Style Guide, Section 4.2 on Figures</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p><a href="https://academic.oup.com/amamanualofstyle/book/27941/chapter/207563838">From Section 4.1 Tables, in AMA Style Guide</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -253,11 +334,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./Analyzing.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Analyzing your Data</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link">
+      <a href="./References.html" class="pagination-link">
         <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>

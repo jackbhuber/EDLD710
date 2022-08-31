@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>EDLD 710: Data Analysis for Problems of Practice - 1&nbsp; Preparing your Data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Analyzing.html" rel="next">
+<link href="./Collecting.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">EDLD 710: Data Analysis for Problems of Practice</span>
+  </a>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preparing your Data</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Purpose of this Document</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Design.html" class="sidebar-item-text sidebar-link">Planning the Project</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Collecting.html" class="sidebar-item-text sidebar-link">Collecting your Data</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Preparing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preparing your Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Analyzing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Reporting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Reporting your Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./References.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#best-practices-for-excel" id="toc-best-practices-for-excel" class="nav-link active" data-scroll-target="#best-practices-for-excel"> <span class="header-section-number">2</span> Best practices for Excel</a></li>
+  <li><a href="#excel-skills" id="toc-excel-skills" class="nav-link" data-scroll-target="#excel-skills"> <span class="header-section-number">3</span> Excel skills</a></li>
+  <li><a href="#resources-for-data-preparation" id="toc-resources-for-data-preparation" class="nav-link" data-scroll-target="#resources-for-data-preparation"> <span class="header-section-number">4</span> Resources for data preparation</a></li>
+  <li><a href="#granularity-of-data" id="toc-granularity-of-data" class="nav-link" data-scroll-target="#granularity-of-data"> <span class="header-section-number">5</span> Granularity of data</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preparing your Data</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>The purpose of this page is to help you clean, organize, and otherwise prepare and enhance your data for statistical analysis and/or visualization.</p>
+<hr>
+<section id="best-practices-for-excel" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Best practices for Excel</h1>
+<p>In all likelihood the primary tool you’ll use for working with your data is Excel - possibly by now the most commonly used tool for working with data in the world. What follows is a list of good practices that might make your Excel data easier to manage and collaborate with others. These tips will save you time wasted on fixing data and will help keep your data in format appropriate for analysis:</p>
+<ol type="1">
+<li><p><strong>Put <em>variables in columns</em> and <em>observations in rows</em></strong>. Include a unique identifying number for each case. Be sure that each variable name is unique (no duplicate variable names).</p></li>
+<li><p><strong>Put <em>variable names</em> in the <em>first row</em></strong>. Variables must start with a letter. Do not include special characters (#, !, ?, %, etc.) or spaces in your variable names.</p></li>
+<li><p><strong>Keep all your data “touching”. <em>No empty rows or columns</em></strong>. This is critically important for sorting. Empty columns or rows break the structural integrity of your data set and could allow you to sort a subsection of your data apart the rest of it.</p></li>
+<li><p><strong>No merged cells</strong>.</p></li>
+<li><p><strong>Use a separate column for each piece of information</strong>. Don’t enter data such as “120/80” for blood pressure. Enter systolic blood pressure as one variable and diastolic blood pressure as another variable. Don’t enter data as “A,C,D” or “BDF” if there are three possible answers to a question. Include a separate column for each answer.</p></li>
+<li><p><strong>Decide on a “missingness” convention</strong>. Missing data can cause a multitude of problems. To enter a missing data value either enter a blank or an “impossible” numeric code (for numbers) or an easily recognizable single digit character code for character (trying to avoid mixing numeric and character data). Be sure, if you use a missing value code, that it cannot be confused with a “real” data value.</p></li>
+<li><p><strong>Use only one worksheet for your data; do analysis on a different worksheet</strong>. If you decide to use multiple sheets for you data, follow the variable naming conventions for the tabs that name the sheets (keep the names simple and unique).</p></li>
+<li><p><strong>Do not “stack” data on the same sheets</strong>. For example, “treated” versus “non-treated” patients can be handled by column variable that has a code for Treated (yes/no).</p></li>
+<li><p><strong>Dedicate one worksheet to your original, unedited raw data. Make a copy of it to do all your cleaning and analysis</strong>. You might label this worksheet “Original” or “Raw data.” This is important so that <strong>when you make a mistake, you always have your original data to fall back on</strong>.</p></li>
+<li><p><strong>Dedicate one worksheet to your Clean / Working data</strong>.</p></li>
+<li><p><strong>Make the most of your variable labels</strong>. On your worksheet of “Clean” (or “Working”) data, make sure every column of data has a clear, concise, descriptive label. Here’s what I do to take column labels to the next level:</p></li>
+</ol>
+<ul>
+<li>Ensure that the top row of my data includes a clear, concise label for each column of data.</li>
+<li>Bold the row.</li>
+<li>Add a fill color to the row.</li>
+<li>Freeze the row (Select the row, then View –&gt; Freeze top row).</li>
+<li>Enable word wrap in the row.</li>
+</ul>
+<ol start="12" type="1">
+<li><strong>Apply a consistent format for your columns</strong>. Data elements are different sizes. Names tend to be long while numerical values tend to be short. I don’t like it when a column label is left-aligned but the data are right-aligned. I find these variations in visual formatting distracting. To deal with these distractions, I tend to:</li>
+</ol>
+<ul>
+<li>Apply all the column label formatting mentioned above.</li>
+<li>Fix all my column widths to 15.</li>
+<li>Left align columns (both column labels and data) for text (patient names, medication names, etc.).</li>
+<li>Center columns (both column labels and data) for numeric values.</li>
+<li>Right align columns for time data.</li>
+</ul>
+<p>I find (and I think you will too) that enforcing a consistent format removes variable formatting as a distraction so I can see and focus on the data.</p>
+<hr>
+</section>
+<section id="excel-skills" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Excel skills</h1>
+<p>Here are the skills you will most likely need and use:</p>
+<ul>
+<li>Sorting your data array on a column</li>
+<li>Filtering your data array based on specific values of one or more columns</li>
+<li>Fill down</li>
+<li>Pivot Table</li>
+<li>VLOOKUP function - to matching together related data from different sources</li>
+<li>Conditional formatting</li>
+<li>Basic calculations (SUM, AVG, COUNTIF, etc.)</li>
+<li>CONCATENATE function - to stitch together text and values from different data columns into a new column (which is sometimes helpful and necessary but is generally bad data practice to be avoided)</li>
+</ul>
+<hr>
+</section>
+<section id="resources-for-data-preparation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Resources for data preparation</h1>
+<p><a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a>, by Hadley Wickham (a well-known data scientist), is a classic paper that defines what makes data clean (or “tidy”) [@WickhamTidy]</p>
+<p>The University of New Hampshire Library has an excellent <a href="https://libraryguides.unh.edu/excel">research guide for using Excel</a>, including <a href="https://libraryguides.unh.edu/excel/cleaning">data cleaning</a>, <a href="https://libraryguides.unh.edu/excel/analysis">data analysis</a>, <a href="https://libraryguides.unh.edu/excel/visualization">data visualization</a>, and <a href="https://libraryguides.unh.edu/excel/bestpractices">spreadsheet best practices</a>.</p>
+<p><a href="https://libraryguides.unh.edu/excel/bestpractices">Preparing Data in Excel</a>, from the University of Nebraska Medical Center College of Public Health, has an excellent set of guidelines for working with Excel</p>
+<p><a href="https://lo.unisa.edu.au/mod/book/view.php?id=646440&amp;chapterid=164660">Introduction to Excel</a> is an excellent online module from the University of South Australia Research Methodologies and Statistics department.</p>
+<p><a href="https://datamanagement.hms.harvard.edu/analyze/analysis-ready-datasets">Analysis Ready Datasets</a> is an excellent resource from Harvard Medical School</p>
+<hr>
+</section>
+<section id="granularity-of-data" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Granularity of data</h1>
+<p>Granularity of data means two related things worth your attention:</p>
+<ol type="1">
+<li><p>One is the <em>size of the data point</em>, which is to say what context it provides for other, smaller, data points. Put another way, what data points do you intend to count or summarize, and by which groups do you intend to compare these summaries?</p></li>
+<li><p>The other is, essentially this question: What does a <em>row</em> in the spreadsheet mean? Because Excel counts rows, but what’s contained in a row may not be what you intend to count.</p></li>
+</ol>
+<p>Here are several different levels of granularity of Epic data:</p>
+<p><strong>Patient level</strong>. A patient has a unique ID number: the MRN. No two patients have the same MRN. When it comes to mining Epic data for the research project, the patient list is perhaps the most important: the resident needs a “patient list”. When it comes to data mining, the patient “level” is context to more granular data in the sense that a patient can have multiple encounters - and thus multiple Encounter CSNs “within” the same Patient MRN.</p>
+<p><strong>Encounter level</strong>. The unique Epic ID number for the encounter is the CSN. The encounter is context to more granular data such as a treatment regimen of a particular medicine. Multiple drug administrations can occur “within” an encounter CSN.</p>
+<p><strong>Medication administration level</strong>. This is possibly the lowest level and the most granular data. In Caboodle, each administration of a medicine has a unique ID number and is time-stamped. My queries to date have been for counts of medicine administrations, or firsts, lasts, minimums and maximum doses within a hospital encounter or ICU stay.</p>
+<p><strong>Lab results level</strong>. Lab data is similar to medicine administration data because, again in Caboodle, each lab result is has its own unique ID number and is time-stamped. There can be a great many lab results within a hospital encounter. My queries to date have been for counts of lab results, or firsts, lasts, minimums and maximum values within a hospital encounter or ICU stay.</p>
+<p>The resident data collection form is designed for patient level data; each row in the spreadsheet captures the experience of a hospital encounter. It can also be helpful to report the medicine administration and lab result data sorted chronologically by patient and encounter.</p>
+<hr>
+<p># References {-}</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-CampbellStanley1963" class="csl-entry" role="doc-biblioentry">
+Campbell, Donald T., and Julian C. Stanley. 1963. <em>Experimental and
+Quasi-Experimental Designs for Research</em>. Houghton Mifflin Company.
+</div>
+<div id="ref-Cohen1988" class="csl-entry" role="doc-biblioentry">
+Cohen, Jacob. 1988. <em>Statistical Power Analysis for the Behavioral
+Sciences</em>. 2nd ed. Mahwah, New Jersey: Lawrence Erlbaum Associates.
+</div>
+<div id="ref-DeMuth2009" class="csl-entry" role="doc-biblioentry">
+De Muth, James E. 2009. <span>“Overview of Biostatistics Used in
+Clinical Research.”</span> <em>American Journal of Health-System
+Pharmacy</em> 66: 70–81.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Collecting.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Collecting your Data</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Analyzing.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
