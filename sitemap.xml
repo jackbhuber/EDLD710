@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jackhuber.org/EDLD710/index.html</loc>
-    <lastmod>2022-08-31T02:00:33.953Z</lastmod>
+    <lastmod>2022-08-31T02:06:40.092Z</lastmod>
   </url>
   <url>
-    <loc>https://jackhuber.org/EDLD710/intro.html</loc>
-    <lastmod>2022-08-31T02:00:33.954Z</lastmod>
+    <loc>https://jackhuber.org/EDLD710/Design.html</loc>
+    <lastmod>2022-08-31T02:06:40.131Z</lastmod>
   </url>
   <url>
-    <loc>https://jackhuber.org/EDLD710/summary.html</loc>
-    <lastmod>2022-08-31T02:00:33.956Z</lastmod>
+    <loc>https://jackhuber.org/EDLD710/Collecting.html</loc>
+    <lastmod>2022-08-31T02:06:40.134Z</lastmod>
   </url>
   <url>
-    <loc>https://jackhuber.org/EDLD710/references.html</loc>
-    <lastmod>2022-08-31T02:00:33.957Z</lastmod>
+    <loc>https://jackhuber.org/EDLD710/Analyzing.html</loc>
+    <lastmod>2022-08-31T02:06:40.135Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jackhuber.org/EDLD710/References.html</loc>
+    <lastmod>2022-08-31T02:06:40.135Z</lastmod>
   </url>
   <url>
     <loc>https://jackhuber.org/EDLD710/EDLD-710--Data-Analysis-for-Problems-of-Practice.pdf</loc>
-    <lastmod>2022-08-31T02:00:32.778Z</lastmod>
+    <lastmod>2022-08-31T02:06:39.767Z</lastmod>
   </url>
 </urlset>

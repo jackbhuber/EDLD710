@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EDLD 710: Data Analysis for Problems of Practice - References</title>
+<title>EDLD 710: Data Analysis for Problems of Practice - 4&nbsp; Analyzing your Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -15,25 +15,6 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -44,7 +25,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Analyzing.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./Collecting.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -91,7 +73,7 @@ div.csl-indent {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">References</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -126,12 +108,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Analyzing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></a>
+  <a href="./Analyzing.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">References</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
     </ul>
@@ -139,14 +121,21 @@ div.csl-indent {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#preparing-your-data-for-analysis" id="toc-preparing-your-data-for-analysis" class="nav-link active" data-scroll-target="#preparing-your-data-for-analysis"> <span class="header-section-number">4.1</span> Preparing your data for analysis</a></li>
+  <li><a href="#choosing-appropriate-statistics" id="toc-choosing-appropriate-statistics" class="nav-link" data-scroll-target="#choosing-appropriate-statistics"> <span class="header-section-number">4.2</span> Choosing appropriate statistics</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">References</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></h1>
 </div>
 
 
@@ -160,11 +149,26 @@ div.csl-indent {
 
 </header>
 
-<div id="refs" role="doc-bibliography" style="display: none">
+<p>You have data. Congratulations! Let’s analyze!</p>
+<section id="preparing-your-data-for-analysis" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="preparing-your-data-for-analysis"><span class="header-section-number">4.1</span> Preparing your data for analysis</h2>
+<p>The first step is to complete a number of tasks to prepare your data for analysis. One data matrix. See the exemplar.</p>
+</section>
+<section id="choosing-appropriate-statistics" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="choosing-appropriate-statistics"><span class="header-section-number">4.2</span> Choosing appropriate statistics</h2>
+<p>It is important to know the measurement level of your variables. How do you express the outcome by which to compare your pre- and post- samples? Is it…</p>
+<ul>
+<li>Mortality rate (% surviving)? In such a case you would be comparing two proportions.</li>
+<li>“Time to…” a therapeutic level? In such a case you would be comparing two different quantities of time.</li>
+</ul>
+<p><strong>Odds ratios / Logistic regression</strong>. Some outcomes are binary. Yes or no. Something happened or it didn’t. Treatment worked or it did not. For projects with binary outcomes, the researcher will want to consider comparing odds ratios. Logistic regression would be the appropriate technique for modeling differences between the pre- and post-implementation groups in whether patients landed in one category or the other.</p>
+<p><strong>Chi-square test of independence</strong>. Some outcomes are categorical. There is no “more” or “less” but rather different categories of outcomes. For projects with categorical outcomes, the researcher will want to consider using chi-square tests of independence.</p>
+<p><strong>Two-sample t-test</strong>.</p>
+<p><strong>Z test of the difference of proportions</strong>.</p>
+<p><strong>Cohen’s <em>d</em> effect size</strong>.</p>
 
-</div>
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -266,11 +270,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Analyzing.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Analyzing your Data</span></span>
+      <a href="./Collecting.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Collecting your Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
