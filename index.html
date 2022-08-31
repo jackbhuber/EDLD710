@@ -17,69 +17,6 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -157,17 +94,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Preface</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">| label: setup</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></a>
+  <a href="./summary.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Summary</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -184,7 +121,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#purpose-of-this-document" id="toc-purpose-of-this-document" class="nav-link active" data-scroll-target="#purpose-of-this-document"> <span class="header-section-number">1</span> Purpose of this Document</a></li>
+  <li><a href="#planning-the-project" id="toc-planning-the-project" class="nav-link" data-scroll-target="#planning-the-project"> <span class="header-section-number">2</span> Planning the Project</a>
+  <ul class="collapse">
+  <li><a href="#the-causal-logic-of-the-project" id="toc-the-causal-logic-of-the-project" class="nav-link" data-scroll-target="#the-causal-logic-of-the-project"> <span class="header-section-number">2.1</span> The causal logic of the project</a></li>
+  <li><a href="#how-many-patients" id="toc-how-many-patients" class="nav-link" data-scroll-target="#how-many-patients"> <span class="header-section-number">2.2</span> How many patients?</a></li>
+  </ul></li>
+  <li><a href="#collecting-your-data" id="toc-collecting-your-data" class="nav-link" data-scroll-target="#collecting-your-data"> <span class="header-section-number">3</span> Collecting your Data</a>
+  <ul class="collapse">
+  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"> <span class="header-section-number">3.1</span> Data Sources</a></li>
+  <li><a href="#granularity-of-data" id="toc-granularity-of-data" class="nav-link" data-scroll-target="#granularity-of-data"> <span class="header-section-number">3.2</span> Granularity of data</a></li>
+  <li><a href="#advice-for-data-collection-and-management" id="toc-advice-for-data-collection-and-management" class="nav-link" data-scroll-target="#advice-for-data-collection-and-management"> <span class="header-section-number">3.3</span> Advice for Data Collection and Management</a></li>
+  </ul></li>
+  <li><a href="#analyzing-your-data" id="toc-analyzing-your-data" class="nav-link" data-scroll-target="#analyzing-your-data"> <span class="header-section-number">4</span> Analyzing your Data</a>
+  <ul class="collapse">
+  <li><a href="#preparing-your-data-for-analysis" id="toc-preparing-your-data-for-analysis" class="nav-link" data-scroll-target="#preparing-your-data-for-analysis"> <span class="header-section-number">4.1</span> Preparing your data for analysis</a></li>
+  <li><a href="#choosing-appropriate-statistics" id="toc-choosing-appropriate-statistics" class="nav-link" data-scroll-target="#choosing-appropriate-statistics"> <span class="header-section-number">4.2</span> Choosing appropriate statistics</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"> <span class="header-section-number">5</span> </a></li>
   </ul>
 </nav>
     </div>
@@ -219,16 +173,99 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a Quarto book.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<section id="purpose-of-this-document" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Purpose of this Document</h1>
+<p>The purpose of this document is to assemble some advice and resources to support Swedish Pharmacy residents in their journey from project proposal to a completed research project for presentation and publication.</p>
+<hr>
+</section>
+<section id="planning-the-project" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Planning the Project</h1>
+<section id="the-causal-logic-of-the-project" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="the-causal-logic-of-the-project"><span class="header-section-number">2.1</span> The causal logic of the project</h2>
+<p>The resident researcher should begin the project with a basic sense of the design logic of the project. The point of this section is to introduce or reinforce a few basic concepts of research design as they apply to the resident research project.</p>
+<p>The project aspires to make a case for a proposed improved medical treatment. This case rests on causal evidence that the proposed treatment is more clinically effective than the current mode of treatment. The most convincing case would demonstrate that the treatment alone caused the improvement and cast doubt that the improvement would have happened anyway. To thoughtfully plan data collection for the strongest causal evidence, and to anticipate and minimize challenges of rival explanations, is the purpose of research <strong>design</strong> <span class="citation" data-cites="CampbellStanley1963">(<a href="references.html#ref-CampbellStanley1963" role="doc-biblioref"><strong>CampbellStanley1963?</strong></a>)</span>.</p>
+<p>The ideal design would be based on random assignment of patients to conditions, as in a randomly controlled trial. The resident researcher would randomly assign patients to a control condition and various treatment conditions, then compare outcomes of all these groups following treatment, and the outcomes will differ at least slightly. Assume patients in the treatment conditions had better outcomes than patients in the control condition. The resident could attribute this difference to the treatment alone because in all other ways the groups would differ only by chance <em>by design</em>.</p>
+<p>Random assignment is probably not an option for resident research project. Until that happens, the project falls under the category of <strong>quasi-experiment</strong> which means it is more vulnerable to <strong>confounding explanations</strong> of any differences in outcomes.</p>
+<p>The resident research project based on retrospective chart review will culminate in a comparison between two groups: a pre-implementation group and a post-implementation group. Assume a set of data that show better outcomes for the post-implementation group. Great! Can we attribute that to implementation of an improved treatment or protocol, or for some other reason would the post-implementation group have fared better anyway?</p>
+<p>One potentially confounding pre-existing difference between the two groups is <em>time</em>, or history. A recent resident project provides a good example. In this project, the time frame for the pre-implementation group was early 2020 and thus this group had a higher incidence of COVID-19 infection than the more recent post-implementation group. Were outcomes for the pre-implementation group less favorable because more of them were infected with COVID-19? The proposed dosing protocol may very well have improved outcomes for the post-implementation group. The problem is there are competing explanations of the results. Pre-existing differences between the two groups in COVID-19 infection amounted to a <em>confounding</em> variable due to history.</p>
+<p>The point here is not to teach a course in research design but to help the resident researcher clarify for this project:</p>
+<ul>
+<li>What are the primary outcomes to improve? Length of stay? Time-to-therapeutic level? These are <em>dependent</em> variables. They depend on, or are the effects of, other variables.</li>
+<li>What is the difference in treatment intended to cause the improvement in the post-implementation group? This is the independent variable.</li>
+<li>All other variables are control variables. They should differ only by chance. If there is a noticeable pre-existing difference, and the level of that factor in one group affects the outcome, it is a confound.</li>
+</ul>
+</section>
+<section id="how-many-patients" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="how-many-patients"><span class="header-section-number">2.2</span> How many patients?</h2>
+<p>Possibly the most pressing question for resident research projects is: <strong>How many patients do I need?</strong></p>
+<p>The resident research project will culiminate in a series of comparisons between the pre-implementation and post-implementation groups. Outcomes of the two samples will differ by at least some quantity. The resident researcher expresses this difference as an effect, like this:</p>
+<p>[insert table about here]</p>
+<p>Assume that this effect suggests more favorable outcomes for the post-implementation group. This effect raises several questions:</p>
+<ul>
+<li>How do we evaluate this effect?</li>
+<li>Could we attribute it to chance? (because it would be very unlikely for both groups to have exactly the same outcomes)</li>
+<li>Or is it larger than that?</li>
+</ul>
+<p>In statistical terms, this is a question of <strong>statistical power</strong>. Power is the ability to isolate a treatment effect when it really does exist <span class="citation" data-cites="Cohen1988">(<a href="references.html#ref-Cohen1988" role="doc-biblioref"><strong>Cohen1988?</strong></a>)</span>. Power is a function of effect size, sample size, and statistical significance. In order to decide on a number of patients we need to have a sense of what size of effect we want to reliably detect.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/power-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>This a plot of power rates against these other variables. A large effect (r ~ 0.5) is detectable with a sample of any size. But only large samples have the power to detect a statistically significant (p &lt; .05) small correlation (r = 0.1).</p>
+<hr>
+</section>
+</section>
+<section id="collecting-your-data" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Collecting your Data</h1>
+<section id="data-sources" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="data-sources"><span class="header-section-number">3.1</span> Data Sources</h2>
+<p>For collecting data from Epic, it might be helpful to have a sense of the landscape of its different databases. There are three primary databases:</p>
+<p><img src="EpicDataLandscape.png" class="img-fluid"></p>
+<p><strong>Chronicles</strong>. This is the database that is collecting data from Hyperspace in real time. For reporting, Reporting Workbench pulls data directly from Chronicles, but it is otherwise not designed very well for historical reporting.</p>
+<p><strong>Clarity</strong>. This is the primary relational database for reporting Epic data. Through a nightly process known as ETL (“extract-transform-load”), Clarity extracts data from Chronicles and stores it in a thousand bazillion tables (think “spreadsheets”). To pull data for a report from Clarity is to identify the correct tables and fields and to write a SQL query to join the tables, apply the appropriate selection criteria, and report the appropriate fields.</p>
+<p><strong>Caboodle</strong>. This a relatively new relational database that functions essentially the same as Clarity but is designed to be much easier to use. Caboodle uses fewer tables derived from myriad Clarity tables which vastly simplifies the work and complexity of writing a SQL query. The down side is not all Clarity data are in Caboodle.</p>
+</section>
+<section id="granularity-of-data" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="granularity-of-data"><span class="header-section-number">3.2</span> Granularity of data</h2>
+<p>Granularity means two related things. One is the size of the data point which is to say what context it provides for other, smaller, data points. The other is, essentially this question: What does a row in the spreadsheet mean? There are several different levels of granularity:</p>
+<p><strong>Patient-level data</strong>. A patient has a unique ID number: the MRN. No two patients have the same MRN. When it comes to mining Epic data for the research project, the patient list is perhaps the most important: the resident needs a “patient list”. When it comes to data mining, the patient “level” is context to more granular data in the sense that a patient can have multiple encounters - and thus multiple Encounter CSNs “within” the same Patient MRN.</p>
+<p><strong>Encounter-level data</strong>. The unique Epic ID number for the encounter is the CSN. The encounter is context to more granular data such as a treatment regimen of a particular medicine. Multiple drug administrations can occur “within” an encounter CSN.</p>
+<p><strong>Medication administration level data</strong>. This is possibly the lowest level and the most granular data. In Caboodle, each administration of a medicine has a unique ID number and is time-stamped. My queries to date have been for counts of medicine administrations, or firsts, lasts, minimums and maximum doses within a hospital encounter or ICU stay.</p>
+<p><strong>Lab results level data</strong>. Lab data is similar to medicine administration data because, again in Caboodle, each lab result is has its own unique ID number and is time-stamped. There can be a great many lab results within a hospital encounter. My queries to date have been for counts of lab results, or firsts, lasts, minimums and maximum values within a hospital encounter or ICU stay.</p>
+<p>The resident data collection form is designed for patient level data; each row in the spreadsheet captures the experience of a hospital encounter. It can also be helpful to report the medicine administration and lab result data sorted chronologically by patient and encounter.</p>
+</section>
+<section id="advice-for-data-collection-and-management" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="advice-for-data-collection-and-management"><span class="header-section-number">3.3</span> Advice for Data Collection and Management</h2>
+<p><strong>Be proactive</strong>. As you begin to decide what data to collect, submit your project plan and requests for data in writing to me (Jack) as soon as possible. This is so I can have a bit of time to understand your project, do some discovery in Caboodle or Clarity, and note any questions. Then meet with me via Teams to get on the same page.</p>
+<p><strong>Devise a system for organizing your data</strong>. By this I mean version control. This data collection process is iterative. You will ask for data and I’ll write a SQL query that produces an Excel workbook of data. That’s one iteration. In all likelihood you’ll need a revision or two. Upon receiving your feedback I’ll edit my query and produce for you a new set of data to replace the first set. That’s the second iteration. The more iterations, the more data, the more potential for multiple versions and data overload. And I may not be able to do more than a few iterations. I can work on some best practices to help us through this. Stay tuned.</p>
+<p><strong>There is no substitute for chart review</strong>. Some fraction of resident research data can come from Epic data mining, but it still needs to be validated with careful chart review. And some data which are very difficult to mine or to query into the correct format may have to come from chart review.</p>
+<hr>
+</section>
+</section>
+<section id="analyzing-your-data" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Analyzing your Data</h1>
+<p>You have data. Congratulations! Let’s analyze!</p>
+<section id="preparing-your-data-for-analysis" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="preparing-your-data-for-analysis"><span class="header-section-number">4.1</span> Preparing your data for analysis</h2>
+<p>The first step is to complete a number of tasks to prepare your data for analysis. One data matrix. See the exemplar.</p>
+</section>
+<section id="choosing-appropriate-statistics" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="choosing-appropriate-statistics"><span class="header-section-number">4.2</span> Choosing appropriate statistics</h2>
+<p>It is important to know the measurement level of your variables. How do you express the outcome by which to compare your pre- and post- samples? Is it…</p>
+<ul>
+<li>Mortality rate (% surviving)? In such a case you would be comparing two proportions.</li>
+<li>“Time to…” a therapeutic level? In such a case you would be comparing two different quantities of time.</li>
+</ul>
+<p><strong>Odds ratios / Logistic regression</strong>. Some outcomes are binary. Yes or no. Something happened or it didn’t. Treatment worked or it did not. For projects with binary outcomes, the researcher will want to consider comparing odds ratios. Logistic regression would be the appropriate technique for modeling differences between the pre- and post-implementation groups in whether patients landed in one category or the other.</p>
+<p><strong>Chi-square test of independence</strong>. Some outcomes are categorical. There is no “more” or “less” but rather different categories of outcomes. For projects with categorical outcomes, the researcher will want to consider using chi-square tests of independence.</p>
+<p><strong>Two-sample t-test</strong>.</p>
+<p><strong>Z test of the difference of proportions</strong>.</p>
+<p><strong>Cohen’s <em>d</em> effect size</strong>.</p>
+</section>
+</section>
+<section id="section" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> </h1>
 
 
 </section>
@@ -336,7 +373,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
