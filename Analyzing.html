@@ -210,13 +210,14 @@ div.csl-indent {
   <ul>
   <li><a href="#define-the-measurement-levels-of-your-variables" id="toc-define-the-measurement-levels-of-your-variables" class="nav-link active" data-scroll-target="#define-the-measurement-levels-of-your-variables">Define the measurement levels of your variables</a>
   <ul class="collapse">
-  <li><a href="#nominal-measurement" id="toc-nominal-measurement" class="nav-link" data-scroll-target="#nominal-measurement">Nominal measurement</a></li>
-  <li><a href="#ordinal-measurement" id="toc-ordinal-measurement" class="nav-link" data-scroll-target="#ordinal-measurement">Ordinal measurement</a></li>
-  <li><a href="#interval-and-ratio-level-measurement" id="toc-interval-and-ratio-level-measurement" class="nav-link" data-scroll-target="#interval-and-ratio-level-measurement">Interval and ratio level measurement</a></li>
+  <li><a href="#nominal" id="toc-nominal" class="nav-link" data-scroll-target="#nominal">Nominal</a></li>
+  <li><a href="#ordinal" id="toc-ordinal" class="nav-link" data-scroll-target="#ordinal">Ordinal</a></li>
+  <li><a href="#interval-and-ratio" id="toc-interval-and-ratio" class="nav-link" data-scroll-target="#interval-and-ratio">Interval and ratio</a></li>
   </ul></li>
-  <li><a href="#choose-appropriate-statistics" id="toc-choose-appropriate-statistics" class="nav-link" data-scroll-target="#choose-appropriate-statistics">Choose appropriate statistics</a>
+  <li><a href="#explore-your-variables-with-univariate-analyses" id="toc-explore-your-variables-with-univariate-analyses" class="nav-link" data-scroll-target="#explore-your-variables-with-univariate-analyses">Explore your variables with univariate analyses</a></li>
+  <li><a href="#examine-relationships-with-bivariate-analyses" id="toc-examine-relationships-with-bivariate-analyses" class="nav-link" data-scroll-target="#examine-relationships-with-bivariate-analyses">Examine relationships with bivariate analyses</a>
   <ul class="collapse">
-  <li><a href="#chi-square-chi-2-tests" id="toc-chi-square-chi-2-tests" class="nav-link" data-scroll-target="#chi-square-chi-2-tests">Chi-square <span class="math inline">\(\chi 2\)</span> tests</a></li>
+  <li><a href="#chi-square-chi-2-tests-of-assocation" id="toc-chi-square-chi-2-tests-of-assocation" class="nav-link" data-scroll-target="#chi-square-chi-2-tests-of-assocation">Chi-square <span class="math inline">\(\chi 2\)</span> tests of assocation</a></li>
   <li><a href="#t-tests" id="toc-t-tests" class="nav-link" data-scroll-target="#t-tests">t tests</a></li>
   </ul></li>
   <li><a href="#external-resources-for-data-analysis" id="toc-external-resources-for-data-analysis" class="nav-link" data-scroll-target="#external-resources-for-data-analysis">External resources for data analysis</a></li>
@@ -263,8 +264,8 @@ div.csl-indent {
 <li>Mortality rate (% surviving)? In such a case you would be comparing two proportions.</li>
 <li>“Time to…” a therapeutic level? In such a case you would be comparing two different quantities of time.</li>
 </ul>
-<section id="nominal-measurement" class="level3">
-<h3 class="anchored" data-anchor-id="nominal-measurement">Nominal measurement</h3>
+<section id="nominal" class="level3">
+<h3 class="anchored" data-anchor-id="nominal">Nominal</h3>
 <p>Nominal measurement is categories. Each patient must fall into only one category, and the categories must be mutually exclusive and exhaustive. Here are some examples:</p>
 <ul>
 <li>Gender (Male/Female)</li>
@@ -277,8 +278,8 @@ div.csl-indent {
 </ul>
 <p>Outcomes are usually reported as frequency counts or percentages (in each category).</p>
 </section>
-<section id="ordinal-measurement" class="level3">
-<h3 class="anchored" data-anchor-id="ordinal-measurement">Ordinal measurement</h3>
+<section id="ordinal" class="level3">
+<h3 class="anchored" data-anchor-id="ordinal">Ordinal</h3>
 <p>Ordinal measure also puts patients into categories, but the categories have an ascending or descending order: patients have <em>more</em> or <em>less</em> of somthing. But the differences between the categories is not necessarily the same. Here are some examples:</p>
 <ul>
 <li>Stages I-IV tumors</li>
@@ -293,8 +294,8 @@ div.csl-indent {
 <li>the <strong>Spearman’s rho</strong> test</li>
 </ul>
 </section>
-<section id="interval-and-ratio-level-measurement" class="level3">
-<h3 class="anchored" data-anchor-id="interval-and-ratio-level-measurement">Interval and ratio level measurement</h3>
+<section id="interval-and-ratio" class="level3">
+<h3 class="anchored" data-anchor-id="interval-and-ratio">Interval and ratio</h3>
 <p>Finally, interval and ratio measurement means <strong>continuous</strong> data: patients fall somewhere on a continuum, like a temperature scale. As a result, variables measured using interval and ratio scales are often referred to as continuous variables. Here are some examples:</p>
 <ul>
 <li>Height</li>
@@ -317,11 +318,30 @@ div.csl-indent {
 <hr>
 </section>
 </section>
-<section id="choose-appropriate-statistics" class="level2">
-<h2 class="anchored" data-anchor-id="choose-appropriate-statistics">Choose appropriate statistics</h2>
-<p>This section offers more information on several choice statistics. These are statistics I’ve used for recent resident projects and seen in the journals.</p>
-<section id="chi-square-chi-2-tests" class="level3">
-<h3 class="anchored" data-anchor-id="chi-square-chi-2-tests">Chi-square <span class="math inline">\(\chi 2\)</span> tests</h3>
+<section id="explore-your-variables-with-univariate-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="explore-your-variables-with-univariate-analyses">Explore your variables with univariate analyses</h2>
+<p>Once you have data in hand, the first thing you should do is explore your data. By this mean do <strong>univariate analyses</strong> of each variable in its own right.</p>
+<p>If you have <strong>categorical</strong> data (people in categories):</p>
+<ul>
+<li>Run frequences to see where people are in your categories. Which are the largest categories? Which are the smallest categories? One way you might do this is by using PivotTable in Excel.</li>
+</ul>
+<p>If you have <strong>ordinal</strong> data (people in categories where some categories are “more than” others):</p>
+<ul>
+<li>Do frequencies to see how people are distributed. What is the <strong>median</strong> of these variables? Remember that central tendency is one number that summarizes the group of numbers. What does this value mean in real world terms?</li>
+</ul>
+<p>If you have <strong>interval</strong> or <strong>ratio</strong> data (people have a place on a temperature-like scale):</p>
+<ul>
+<li><p>Run <strong>measures of central tendency</strong> like <strong><em>average</em></strong>. What is the one number that summarizes the group of numbers? What does this mean in practical real-world terms?</p></li>
+<li><p>But don’t sleep <strong>dispersion</strong>! Everyone understands average, but equally important is <strong>spread</strong> variation away from the average. Find the <strong>standard deviation</strong> of your variables and think of this as “deviation of the average person away from the average.” Then how large is this spread? Are people all over the place? Or are they tightly clustered around the average (and thus pretty much on the same page). What does this mean in practical real world terms?</p></li>
+<li><p>Then there is <strong>skew</strong>. Where do people stack up? Is your distribution lopsided? This is a problem if you want to run parametric statistics (like correlation) because they assume normal distributions. But what might a lopsided distribution mean for your project in real, practical terms?</p></li>
+</ul>
+<hr>
+</section>
+<section id="examine-relationships-with-bivariate-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="examine-relationships-with-bivariate-analyses">Examine relationships with bivariate analyses</h2>
+<p>This section offers more information on several statistics for bivariate (two variable) analyses. These are statistics I’ve used for recent resident projects and seen in the journals.</p>
+<section id="chi-square-chi-2-tests-of-assocation" class="level3">
+<h3 class="anchored" data-anchor-id="chi-square-chi-2-tests-of-assocation">Chi-square <span class="math inline">\(\chi 2\)</span> tests of assocation</h3>
 <p>The chi-square <span class="math inline">\(\chi 2\)</span> test is a commonly used statistic for nominal/categorical data. We use it to examine the distribution of cases across <strong>categories</strong>. Essentially, it compares the distribution of cases you actually see to the distribution of cases you would expect to see from normal variation.</p>
 <p>Here is one example of a chi-square <span class="math inline">\(\chi 2\)</span> test for a recent resident project. The question is whether gender (male/female) makes a statistically significant difference in whether patients need three or more dose changes of bivalirudin before they reach a therapeutic goal.</p>
 <div class="cell">
