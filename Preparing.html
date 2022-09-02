@@ -15,6 +15,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -126,7 +145,7 @@ ul.task-list{list-style: none;}
    
   <ul>
   <li><a href="#preparing-data-for-analysis-in-excel" id="toc-preparing-data-for-analysis-in-excel" class="nav-link active" data-scroll-target="#preparing-data-for-analysis-in-excel">Preparing data for analysis in Excel</a></li>
-  <li><a href="#excel-skills" id="toc-excel-skills" class="nav-link" data-scroll-target="#excel-skills">Excel skills</a></li>
+  <li><a href="#excel-skills-you-might-learn-or-review" id="toc-excel-skills-you-might-learn-or-review" class="nav-link" data-scroll-target="#excel-skills-you-might-learn-or-review">Excel skills you might learn or review</a></li>
   <li><a href="#resources-for-data-preparation" id="toc-resources-for-data-preparation" class="nav-link" data-scroll-target="#resources-for-data-preparation">Resources for data preparation</a></li>
   </ul>
 </nav>
@@ -154,7 +173,7 @@ ul.task-list{list-style: none;}
 <hr>
 <section id="preparing-data-for-analysis-in-excel" class="level2">
 <h2 class="anchored" data-anchor-id="preparing-data-for-analysis-in-excel">Preparing data for analysis in Excel</h2>
-<p>In all likelihood the primary tool you’ll use for working with your data is Excel - possibly by now the most commonly used tool for working with data in the world. What follows is a list of good practices that might make your Excel data easier to manage and collaborate with others. These tips will save you time wasted on fixing data and will help keep your data in format appropriate for analysis:</p>
+<p>In all likelihood the primary tool you’ll use for working with your data is Excel - possibly by now the most commonly used tool for working with data in the world. What follows is a list of good practices to might make your Excel data easier to manage and collaborate with others. These tips will save you time wasted on fixing data and will help keep your data in format appropriate for analysis:</p>
 <p><strong>Put <em>variables in columns</em> and <em>observations in rows</em></strong>. Include a unique identifying number for each case. Be sure that each variable name is unique (no duplicate variable names).</p>
 <p><strong>Put <em>variable names</em> in the <em>first row</em></strong>. Variables must start with a letter. Do not include special characters (#, !, ?, %, etc.) or spaces in your variable names.</p>
 <p><strong>Keep all your data “touching”. <em>No empty rows or columns</em></strong>. This is critically important for sorting. Empty columns or rows break the structural integrity of your data set and could allow you to sort a subsection of your data apart the rest of it.</p>
@@ -184,9 +203,9 @@ ul.task-list{list-style: none;}
 <p>I find (and I think you will too) that enforcing a consistent format removes variable formatting as a distraction so I can see and focus on the data.</p>
 <hr>
 </section>
-<section id="excel-skills" class="level2">
-<h2 class="anchored" data-anchor-id="excel-skills">Excel skills</h2>
-<p>Here are the skills you will most likely need and use:</p>
+<section id="excel-skills-you-might-learn-or-review" class="level2">
+<h2 class="anchored" data-anchor-id="excel-skills-you-might-learn-or-review">Excel skills you might learn or review</h2>
+<p>Excel is a powerful tool but you don’t know have to know everything about it to use it effectively to analyze the data you’ve collected. Here is a series of skills you will most likely need and use:</p>
 <ul>
 <li>Sorting your data array on a column</li>
 <li>Filtering your data array based on specific values of one or more columns</li>
@@ -201,13 +220,19 @@ ul.task-list{list-style: none;}
 </section>
 <section id="resources-for-data-preparation" class="level2">
 <h2 class="anchored" data-anchor-id="resources-for-data-preparation">Resources for data preparation</h2>
-<p><a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a>, by Hadley Wickham (a well-known data scientist), is a classic paper that defines what makes data clean (or “tidy”) [@WickhamTidy]</p>
+<p>I’m not the first person to attempt to offer guidance on data preparation. Here is a series of resources I’ve found and curated to help you prepare your data:</p>
+<p><a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a>, by Hadley Wickham (a well-known data scientist), is a classic paper that defines what makes data clean (or “tidy”) <span class="citation" data-cites="WickhamTidy">(<a href="References.html#ref-WickhamTidy" role="doc-biblioref">Wickham 2014</a>)</span></p>
 <p>The University of New Hampshire Library has an excellent <a href="https://libraryguides.unh.edu/excel">research guide for using Excel</a>, including <a href="https://libraryguides.unh.edu/excel/cleaning">data cleaning</a>, <a href="https://libraryguides.unh.edu/excel/analysis">data analysis</a>, <a href="https://libraryguides.unh.edu/excel/visualization">data visualization</a>, and <a href="https://libraryguides.unh.edu/excel/bestpractices">spreadsheet best practices</a>.</p>
 <p><a href="https://libraryguides.unh.edu/excel/bestpractices">Preparing Data in Excel</a>, from the University of Nebraska Medical Center College of Public Health, has an excellent set of guidelines for working with Excel</p>
 <p><a href="https://lo.unisa.edu.au/mod/book/view.php?id=646440&amp;chapterid=164660">Introduction to Excel</a> is an excellent online module from the University of South Australia Research Methodologies and Statistics department.</p>
 <p><a href="https://datamanagement.hms.harvard.edu/analyze/analysis-ready-datasets">Analysis Ready Datasets</a> is an excellent resource from Harvard Medical School</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-WickhamTidy" class="csl-entry" role="doc-biblioentry">
+Wickham, Hadley. 2014. <span>“Tidy Data.”</span> <em>Journal of Statistical Software</em> 59 (10). <a href="https://www.jstatsoft.org/article/view/v059i10">https://www.jstatsoft.org/article/view/v059i10</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
