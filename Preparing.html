@@ -125,10 +125,9 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#best-practices-for-excel" id="toc-best-practices-for-excel" class="nav-link active" data-scroll-target="#best-practices-for-excel">Best practices for Excel</a></li>
+  <li><a href="#preparing-data-for-analysis-in-excel" id="toc-preparing-data-for-analysis-in-excel" class="nav-link active" data-scroll-target="#preparing-data-for-analysis-in-excel">Preparing data for analysis in Excel</a></li>
   <li><a href="#excel-skills" id="toc-excel-skills" class="nav-link" data-scroll-target="#excel-skills">Excel skills</a></li>
   <li><a href="#resources-for-data-preparation" id="toc-resources-for-data-preparation" class="nav-link" data-scroll-target="#resources-for-data-preparation">Resources for data preparation</a></li>
-  <li><a href="#granularity-of-data" id="toc-granularity-of-data" class="nav-link" data-scroll-target="#granularity-of-data">Granularity of data</a></li>
   </ul>
 </nav>
     </div>
@@ -153,13 +152,13 @@ ul.task-list{list-style: none;}
 
 <p>The purpose of this page is to help you clean, organize, and otherwise prepare and enhance your data for statistical analysis and/or visualization.</p>
 <hr>
-<section id="best-practices-for-excel" class="level2">
-<h2 class="anchored" data-anchor-id="best-practices-for-excel">Best practices for Excel</h2>
+<section id="preparing-data-for-analysis-in-excel" class="level2">
+<h2 class="anchored" data-anchor-id="preparing-data-for-analysis-in-excel">Preparing data for analysis in Excel</h2>
 <p>In all likelihood the primary tool you’ll use for working with your data is Excel - possibly by now the most commonly used tool for working with data in the world. What follows is a list of good practices that might make your Excel data easier to manage and collaborate with others. These tips will save you time wasted on fixing data and will help keep your data in format appropriate for analysis:</p>
 <p><strong>Put <em>variables in columns</em> and <em>observations in rows</em></strong>. Include a unique identifying number for each case. Be sure that each variable name is unique (no duplicate variable names).</p>
 <p><strong>Put <em>variable names</em> in the <em>first row</em></strong>. Variables must start with a letter. Do not include special characters (#, !, ?, %, etc.) or spaces in your variable names.</p>
 <p><strong>Keep all your data “touching”. <em>No empty rows or columns</em></strong>. This is critically important for sorting. Empty columns or rows break the structural integrity of your data set and could allow you to sort a subsection of your data apart the rest of it.</p>
-<p><strong>No merged cells</strong>.</p>
+<p><strong>No merged cells</strong>. This will make things like sorting difficult.</p>
 <p><strong>Use a separate column for each piece of information</strong>. Don’t enter data such as “120/80” for blood pressure. Enter systolic blood pressure as one variable and diastolic blood pressure as another variable. Don’t enter data as “A,C,D” or “BDF” if there are three possible answers to a question. Include a separate column for each answer.</p>
 <p><strong>Decide on a “missingness” convention</strong>. Missing data can cause a multitude of problems. To enter a missing data value either enter a blank or an “impossible” numeric code (for numbers) or an easily recognizable single digit character code for character (trying to avoid mixing numeric and character data). Be sure, if you use a missing value code, that it cannot be confused with a “real” data value.</p>
 <p><strong>Use only one worksheet for your data; do analysis on a different worksheet</strong>. If you decide to use multiple sheets for you data, follow the variable naming conventions for the tabs that name the sheets (keep the names simple and unique).</p>
@@ -207,21 +206,6 @@ ul.task-list{list-style: none;}
 <p><a href="https://libraryguides.unh.edu/excel/bestpractices">Preparing Data in Excel</a>, from the University of Nebraska Medical Center College of Public Health, has an excellent set of guidelines for working with Excel</p>
 <p><a href="https://lo.unisa.edu.au/mod/book/view.php?id=646440&amp;chapterid=164660">Introduction to Excel</a> is an excellent online module from the University of South Australia Research Methodologies and Statistics department.</p>
 <p><a href="https://datamanagement.hms.harvard.edu/analyze/analysis-ready-datasets">Analysis Ready Datasets</a> is an excellent resource from Harvard Medical School</p>
-<hr>
-</section>
-<section id="granularity-of-data" class="level2">
-<h2 class="anchored" data-anchor-id="granularity-of-data">Granularity of data</h2>
-<p>Granularity of data means two related things worth your attention:</p>
-<ol type="1">
-<li><p>One is the <em>size of the data point</em>, which is to say what context it provides for other, smaller, data points. Put another way, what data points do you intend to count or summarize, and by which groups do you intend to compare these summaries?</p></li>
-<li><p>The other is, essentially this question: What does a <em>row</em> in the spreadsheet mean? Because Excel counts rows, but what’s contained in a row may not be what you intend to count.</p></li>
-</ol>
-<p>Here are several different levels of granularity of Epic data:</p>
-<p><strong>Patient level</strong>. A patient has a unique ID number: the MRN. No two patients have the same MRN. When it comes to mining Epic data for the research project, the patient list is perhaps the most important: the resident needs a “patient list”. When it comes to data mining, the patient “level” is context to more granular data in the sense that a patient can have multiple encounters - and thus multiple Encounter CSNs “within” the same Patient MRN.</p>
-<p><strong>Encounter level</strong>. The unique Epic ID number for the encounter is the CSN. The encounter is context to more granular data such as a treatment regimen of a particular medicine. Multiple drug administrations can occur “within” an encounter CSN.</p>
-<p><strong>Medication administration level</strong>. This is possibly the lowest level and the most granular data. In Caboodle, each administration of a medicine has a unique ID number and is time-stamped. My queries to date have been for counts of medicine administrations, or firsts, lasts, minimums and maximum doses within a hospital encounter or ICU stay.</p>
-<p><strong>Lab results level</strong>. Lab data is similar to medicine administration data because, again in Caboodle, each lab result is has its own unique ID number and is time-stamped. There can be a great many lab results within a hospital encounter. My queries to date have been for counts of lab results, or firsts, lasts, minimums and maximum values within a hospital encounter or ICU stay.</p>
-<p>The resident data collection form is designed for patient level data; each row in the spreadsheet captures the experience of a hospital encounter. It can also be helpful to report the medicine administration and lab result data sorted chronologically by patient and encounter.</p>
 
 
 </section>
